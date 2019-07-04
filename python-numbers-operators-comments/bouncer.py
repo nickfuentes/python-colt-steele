@@ -1,4 +1,5 @@
 # ask for age
+# could set int() here to just to take in int's
 user_age = input("How old are you? ")
 
 if user_age != "":
