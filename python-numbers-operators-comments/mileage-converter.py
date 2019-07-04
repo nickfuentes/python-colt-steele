@@ -9,4 +9,4 @@ def convert_kilo_to_miles():
 miles = convert_kilo_to_miles()
 
 print(
-    f"Okay you said you ran {user_input}km. That is {miles} miles! Great Job!")
+    f"Okay you said you ran {user_input}kms. That is {miles} miles! Great Job!")
