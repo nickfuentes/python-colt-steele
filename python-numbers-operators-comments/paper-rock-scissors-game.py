@@ -14,21 +14,23 @@ print_game_title()
 player_one = input("Player one enter [paper] [rock] [scissors] ")
 do_not_cheat()
 player_two = input("Player one enter [paper] [rock] [scissors] ")
-if player_one == "rock" and player_two == "scissors":
-    print("Player One Wins!")
-elif player_one == "rock" and player_two == "paper":
-    print("Player Two Wins!")
-elif player_one == player_two:
-    print("It is a Draw!")
-elif player_one == "paper" and player_two == "rock":
-    print("Player One Wins!")
-elif player_one == "paper" and player_two == "scissors":
-    print("Player Two Wins!")
-elif player_one == "scissors" and player_two == "rock":
-    print("Player Two Wins!")
-elif player_one == "scissors" and player_two == "paper":
-    print("Player One Wins!")
-elif player_one == player_two:
+if player_one == player_two:
     print("It Is A Draw!")
+elif player_one == "rock":
+    if player_two == "scissors":
+        print("Player One Wins!")
+    elif player_two == "paper":
+        print("Player Two Wins!")
+elif player_one == "paper":
+    if player_two == "rock":
+        print("Player One Wins!")
+    elif player_two == "scissors":
+        print("Player Two Wins!")
+elif player_one == "scissors":
+    if player_two == "paper":
+        print("Player One Wins!")
+    elif player_two == "rock":
+        print("Player Two Wins!")
+
 else:
     print("Something Went Wrong!")
