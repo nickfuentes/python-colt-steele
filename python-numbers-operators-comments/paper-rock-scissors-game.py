@@ -5,7 +5,7 @@ def print_game_title():
 
 
 def do_not_cheat():
-    for index in range(20):
+    for index in range(30):
         print("***** DO NOT CHEAT *****")
 
 
@@ -31,6 +31,5 @@ elif player_one == "scissors":
         print("Player One Wins!")
     elif player_two == "rock":
         print("Player Two Wins!")
-
 else:
     print("Something Went Wrong!")
